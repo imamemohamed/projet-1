@@ -1,0 +1,193 @@
+body{ 
+   background-image: url(image/growing-wild-grass-wormwood-field-during-evening-warm-summer-sunset_479940-2.jpg);
+   background-size: 100%;
+   /*background-repeat: no-repeat;*/
+}
+
+fieldset{ 
+   background-color: rgba(0, 0, 0, 0.19);
+   border-radius: 10%;
+}
+
+fieldset:hover{
+   box-shadow: 1px 2px 3px  rgba(0, 0, 0, 0.19);
+}
+
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset{
+   margin: 15px;
+}
+
+legend{
+   font-weight: bolder;
+   font-size: 20px;
+}
+div > input{
+   margin: 1%;
+}
+
+.left, .right{
+    float: left;
+    width: 50%;
+}
+
+ .diviser{
+    display: flex;
+ }
+
+/*les sprites d'images*/
+ #fb, #gg, #wa{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;/*pour permettre la les left et right de fb wa et gg de déplacer*/
+    top: 15px;
+ }
+
+ #fb{
+    background-image: url(image/Capture.PNG);
+    background-position: 1px 0px;
+    margin-left: 10px;
+ } 
+ 
+ #wa{
+    background-image: url(image/Capture.PNG);
+    background-position: -47px 0px;
+    left: 19px;
+ }
+
+ #gg{
+    background-image: url(image/Capture.PNG);
+    background-position: 50px 0px;
+    left: 35px;
+ }
+
+textarea{
+   width: 90%;
+   height: 100px;
+}
+
+.check{
+  padding: 2%;
+}
+.pad{
+   padding: 15px;
+}
+
+.sous a{
+   display: block;
+   text-decoration: none;
+   padding: 5px;
+}
+   
+.sous{
+   display: none;
+   box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.15);
+   position: absolute;
+   width: 100%;
+   z-index: 1000;
+  /* background-color: rgba(0, 0, 0, 0.15);*/
+   border-radius: 20%;
+}
+ 
+.sous li{
+   list-style-type: none;
+   width: 100%;
+}
+
+nav{
+   position: relative;
+   float: right;
+   position: sticky;
+   margin: 0px auto;
+   right: 100px;
+  /* background-color: rgba(0, 0, 0, 0.15);*/ /*couleur de menu*/
+   margin-top: 20px;
+}
+
+nav > ul li:hover .sous{
+   display: block; 
+}
+
+nav a{
+   text-decoration: none;
+ /*  color: #000;*/
+}
+
+nav ul{
+   list-style-type: none;
+}
+
+
+.div1{
+   width: 50%;
+   height: 150px;
+  /* object-fit: cover; /*pour adapter une image a un texte*/
+   border-radius: 50%;
+   float: left;
+   shape-outside: margin-box;/*pour enrouler une image sur un texte*/
+}
+
+h2{
+   font-size: 29px;
+}
+
+article{
+   margin: 0 auto;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+   width: 100%;
+   height: 60%;
+}
+
+footer{
+   text-align: center;
+   width: 100%;
+   height: 30px;
+   background-color: rgba(0, 0, 0, 0.19);
+}
+
+input[type="submit"]{
+   float: right;
+   color: #fff;
+   background-color: #508012;
+   font-weight: bold;
+   text-transform: uppercase;
+   padding: 10px;
+   font-size: 17px;
+   border-radius: 5px;
+   margin-right: 5%;
+}
+
+input[type="submit"]:hover{
+   box-shadow: 0px 0px 5px black;
+   background-color: aqua;
+}
+
+@media screen and (max-width:1050px) {
+   h2{
+      font-size: 13px;
+   }
+   legend{
+      font-weight: bolder;
+      font-size: 15px;
+   }
+   p{
+      font-size: 13px;
+   }
+   nav{
+      position: absolute;
+      right: 20px;
+   }
+   #fb, #gg, #wa{/*je peux t'effacer quand je veux.*/
+      width: 35px;
+      height: 35px;
+      display: block;
+   }
+}
